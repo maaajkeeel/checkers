@@ -1,0 +1,78 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width:100%;
+    height: 100%;
+}
+#mainDiv {
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #trans{
+        position: fixed;
+        top: 0;
+        left:0;
+        z-index: 10000;
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: rgba(128,128,128,0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #init{
+        width: 20vw;
+        height: 20vh;
+        background-color: Navy;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+        #init > div {
+            display: block;
+            top: 10px;
+        }
+        #init > p {
+            text-align:left;
+            display:block;
+        }
+#waiting {
+        position: fixed;
+        top: 0;
+        left:0;
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: rgba(128,128,128,0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1000;
+}
+ #waitin2{
+        width: 20vw;
+        height: 20vh;
+        background-color: Navy;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+        #waitin2 > div {
+            display: block;
+            top: 10px;
+        }
+        #waiting2 > p {
+            text-align:left;
+            display:block;
+            color: navy;
+            background-color: aquamarine;
+        }

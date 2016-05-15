@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Stronka</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="libs/three.js"></script>
+   <script src="Game.js"></script>
+    <script src="Net.js"></script>
+    <script src="UI.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        var game;
+        var net;
+        var ui;
+        window.addEventListener("load", function () {
+          
+            game = new Game()
+            net = new Net();
+            ui = new Ui();
+            var d = document.getElementById("trans");
+            
+            document.getElementById("mainDiv").appendChild(d);
+        })
+    </script>
+</head>
+<body>
+    <div id="mainDiv"></div>
+    <div id="trans">
+        <div id="init">
+            
+                <p>Witaj! Podaj nazwe użytkownika</p>
+           
+            <div>
+                <input type="text" value="login" id="user"/>
+                <input type="button" id="graj" value="Graj" />
+                <input type="button" id="reset" value="Reset" />
+            </div>
+        </div>
+    </div>
+    <div id="waiting">
+        <div id="waiting2">
+
+            <p>czekam na usera 2</p>
+
+        </div>
+    </div>
+</body>
+</html>
